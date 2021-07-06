@@ -1,0 +1,36 @@
+body{
+    display:flex;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+.heart{
+    min-width: 120px;
+    min-height: 120px;
+    background-color: #ed4956;
+    transform: rotate(60deg);
+    position: relative;
+    box-shadow: 0 0px 29px #ed495777;
+    border-radius: 5px;
+}
+.heart::after{
+    content: "";
+    min-width: 120px;
+    min-height: 120px;
+    background-color: #ed4956;
+    position: absolute;
+    top:-50%;
+    border-radius: 50%;
+   
+}
+.heart::before{
+    content: "";
+    min-width: 120px;
+    min-height: 120px;
+    background-color: #ed4956;
+    position: absolute;
+    left:-50%;
+    border-radius: 50%;
+}
